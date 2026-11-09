@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog Post Cards</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Blog<span>Space.</span></div>
+
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+            ☀️ Light Mode
+        </button>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container">
+
+        <section class="hero">
+            <h1>Explore Our <span>Latest Blogs</span></h1>
+            <p>Discover tutorials, technology, and creative ideas.</p>
+        </section>
+
+        <!-- Search and Filters -->
+        <section class="blog-controls">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search blog posts..."
+                aria-label="Search blog posts"
+            >
+
+            <select id="categoryFilter" aria-label="Filter categories">
+                <option value="all">All Categories</option>
+                <option value="technology">Technology</option>
+                <option value="tutorial">Tutorial</option>
+                <option value="design">Design</option>
+            </select>
+
+            <select id="sortFilter" aria-label="Sort blog posts">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+            </select>
+
+            <button id="savedFilter" class="filter-btn">
+                ☆ Saved Posts
+            </button>
+
+        </section>
+
+        <!-- Result Information -->
+        <div class="result-info">
+            <p id="resultCount">Showing 3 blog posts</p>
+        </div>
+
+        <!-- Blog Cards -->
+        <section class="blog-grid" id="blogGrid">
+
+            <!-- First Blog -->
+            <article class="blog-card"
+                data-category="technology"
+                data-date="2026-01-15">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop"
+                        alt="Laptop and notebook on a desk"
+                    >
+
+                    <span class="card-tag">Technology</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-meta">
+                        <span>Jan 15, 2026</span>
+                        <span>5 min read</span>
+                    </div>
+
+                    <h2 class="card-title">
+                        The Future of Web Development
+                    </h2>
+
+                    <p class="card-excerpt">
+                        Explore the latest trends shaping the web development
+                        landscape, from AI-powered tools to new frameworks
+                        revolutionizing how we build.
+                    </p>
+
+                    <p class="full-content">
+                        Web development is constantly evolving.
+                        Modern developers are using AI-powered tools,
+                        responsive frameworks, and advanced JavaScript
+                        techniques to build better websites.
+
+                        Technologies like React, Next.js, and modern CSS
+                        are changing the way developers create digital
+                        experiences. Learning these technologies can help
+                        beginners build modern and responsive applications.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <div class="author">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/44.jpg"
+                                alt="Sarah Chen"
+                                class="author-avatar"
+                            >
+
+                            <span>Sarah Chen</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="bookmark-btn"
+                                aria-label="Bookmark post">
+                                ☆
+                            </button>
+
+                            <button class="read-btn">
+                                Read More
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- Second Blog -->
+            <article class="blog-card"
+                data-category="tutorial"
+                data-date="2026-01-12">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop"
+                        alt="Laptop displaying programming code"
+                    >
+
+                    <span class="card-tag">Tutorial</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-meta">
+                        <span>Jan 12, 2026</span>
+                        <span>8 min read</span>
+                    </div>
+
+                    <h2 class="card-title">
+                        Building Modern UIs with CSS Grid
+                    </h2>
+
+                    <p class="card-excerpt">
+                        A comprehensive guide to mastering CSS Grid layouts.
+                        Learn how to create responsive, complex designs
+                        with minimal code.
+                    </p>
+
+                    <p class="full-content">
+                        CSS Grid is a powerful layout system that allows
+                        developers to create two-dimensional layouts.
+
+                        With grid-template-columns, grid-template-rows,
+                        gap, and responsive media queries, developers
+                        can create flexible website layouts.
+
+                        CSS Grid is particularly useful for blog layouts,
+                        dashboards, galleries, and modern web applications.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <div class="author">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/32.jpg"
+                                alt="James Wilson"
+                                class="author-avatar"
+                            >
+
+                            <span>James Wilson</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="bookmark-btn"
+                                aria-label="Bookmark post">
+                                ☆
+                            </button>
+
+                            <button class="read-btn">
+                                Read More
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- Third Blog -->
+            <article class="blog-card"
+                data-category="design"
+                data-date="2026-01-10">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+                        alt="Colorful data visualization on a screen"
+                    >
+
+                    <span class="card-tag">Design</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-meta">
+                        <span>Jan 10, 2026</span>
+                        <span>4 min read</span>
+                    </div>
+
+                    <h2 class="card-title">
+                        Color Theory for Developers
+                    </h2>
+
+                    <p class="card-excerpt">
+                        Understanding color psychology and how to choose
+                        the right palette for your next project.
+                        Make your designs stand out.
+                    </p>
+
+                    <p class="full-content">
+                        Color theory helps developers and designers
+                        create visually appealing websites.
+
+                        Choosing a suitable color palette improves
+                        readability, visual hierarchy, and user experience.
+
+                        Developers should understand complementary,
+                        analogous, and monochromatic color schemes
+                        when designing websites.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <div class="author">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/68.jpg"
+                                alt="Emily Park"
+                                class="author-avatar"
+                            >
+
+                            <span>Emily Park</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="bookmark-btn"
+                                aria-label="Bookmark post">
+                                ☆
+                            </button>
+
+                            <button class="read-btn">
+                                Read More
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Empty State -->
+        <div id="emptyMessage" class="empty-message" hidden>
+            <h2>No blog posts found!</h2>
+            <p>Try searching with a different keyword or category.</p>
+        </div>
+
+    </main>
+
+
+    <!-- Read More Modal -->
+    <div class="modal" id="blogModal"
+        aria-hidden="true">
+
+        <div class="modal-content">
+
+            <button class="close-modal"
+                id="closeModal"
+                aria-label="Close article">
+                &times;
+            </button>
+
+            <span id="modalCategory" class="modal-tag"></span>
+
+            <h2 id="modalTitle"></h2>
+
+            <div class="modal-meta">
+                <span id="modalDate"></span>
+                <span id="modalAuthor"></span>
+            </div>
+
+            <p id="modalContent"></p>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 BlogSpace. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
