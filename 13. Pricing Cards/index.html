@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="page-header">
+            <h1>Choose Your Plan</h1>
+            <p>Simple and transparent pricing for everyone.</p>
+        </header>
+
+        <!-- Billing Toggle -->
+        <div class="billing-toggle">
+            <span>Monthly</span>
+
+            <label class="switch">
+                <input type="checkbox" id="billingToggle">
+                <span class="slider"></span>
+            </label>
+
+            <span>Yearly</span>
+            <span class="save-badge">Save 20%</span>
+        </div>
+
+        <!-- Pricing Cards -->
+        <section class="pricing-cards">
+
+            <!-- Basic Plan -->
+            <article class="card" data-plan="Basic">
+
+                <div class="card-header">
+                    <h2>Basic</h2>
+                    <p>For individuals getting started.</p>
+                </div>
+
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount" data-monthly="9">9</span>
+                    <span class="period">/month</span>
+                </div>
+
+                <div class="card-body">
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> 5 Projects</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Analytics</li>
+                        <li><i class="fa-solid fa-check"></i> 10GB Storage</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Priority Support</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Advanced Reports</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-outline">
+                        Get Started
+                    </button>
+                </div>
+
+            </article>
+
+            <!-- Pro Plan -->
+            <article class="card popular" data-plan="Pro">
+
+                <div class="popular-badge">Most Popular</div>
+
+                <div class="card-header">
+                    <h2>Pro</h2>
+                    <p>For growing businesses.</p>
+                </div>
+
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount" data-monthly="29">29</span>
+                    <span class="period">/month</span>
+                </div>
+
+                <div class="card-body">
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> Unlimited Projects</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced Analytics</li>
+                        <li><i class="fa-solid fa-check"></i> 100GB Storage</li>
+                        <li><i class="fa-solid fa-check"></i> Priority Support</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Advanced Reports</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-accent">
+                        Get Started
+                    </button>
+                </div>
+
+            </article>
+
+            <!-- Enterprise Plan -->
+            <article class="card" data-plan="Enterprise">
+
+                <div class="card-header">
+                    <h2>Enterprise</h2>
+                    <p>For large organizations.</p>
+                </div>
+
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount" data-monthly="79">79</span>
+                    <span class="period">/month</span>
+                </div>
+
+                <div class="card-body">
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> Unlimited Projects</li>
+                        <li><i class="fa-solid fa-check"></i> Premium Analytics</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited Storage</li>
+                        <li><i class="fa-solid fa-check"></i> 24/7 Priority Support</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced Reports</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-outline">
+                        Get Started
+                    </button>
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- Selection Message -->
+        <div class="selection-message" id="selectionMessage" aria-live="polite"></div>
+
+        <!-- Testimonial -->
+        <section class="testimonial">
+            <p>
+                "A simple and affordable pricing structure that helped
+                our team grow faster."
+            </p>
+            <h3>— Happy Customer</h3>
+        </section>
+
+    </main>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
